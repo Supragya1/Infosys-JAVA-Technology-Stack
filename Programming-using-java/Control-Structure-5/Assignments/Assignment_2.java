@@ -34,6 +34,5 @@ public class Assignment_2 {
         } else {
             System.out.println("The equation has no real root");
         } 
-
     }
 }
