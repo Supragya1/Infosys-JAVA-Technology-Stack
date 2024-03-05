@@ -5,7 +5,6 @@
  * Make necessary changes to the class by making all the attributes private and by adding necessary 
  * accessor and mutator methods thus bringing in Encapsulation.
  */
-
 class Employee {
 
     private String employeeId;
@@ -44,8 +43,8 @@ class Employee {
         return salary;
 	}
 }
-
-public class Exercise {
+public 
+    class Exercise {
 
 	public static void main(String args[]) {
 		Employee employee = new Employee();
