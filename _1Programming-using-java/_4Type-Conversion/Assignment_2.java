@@ -14,5 +14,6 @@ public class Assignment_2 {
         double fahrenheit = scan.nextDouble();
         double celsius = ((fahrenheit - 32) / 9) * 5;
         System.out.println("Celsius = " + celsius);
+        scan.close();
     }
 }

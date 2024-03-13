@@ -9,10 +9,11 @@
 import java.util.Scanner;
 public class Assignment_1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter the radius of the circle: ");
-        double radius = scanner.nextDouble();
+        double radius = scan.nextDouble();
         double area = 3.14 * radius * radius;
         System.out.println("Area of the circle = " + area);
+        scan.close();
     }
 }
