@@ -9,14 +9,18 @@
  * "J    ava pro   gramming"  "Javaprogramming"
  */
 public class Exercise{
-
-    public static String removeWhiteSpaces(String str){ 
-		str = str.replaceAll("\\s", "");
+    public static String removeWhiteSpaces(String str){
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)==' '){
+                str=str.substring(0,i)+str.substring(i+1,str.length());
+                i--;
+            }
+        }
         return str;
 	}
 	
 	public static void main(String args[]){
-		String str = "Hello   How are you   "; 
+		String str = "Hello   How are you   ";
 		str = removeWhiteSpaces(str);
 		System.out.println(str);
 	}
