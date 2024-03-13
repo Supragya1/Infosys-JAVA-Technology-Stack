@@ -38,6 +38,6 @@ class Assignment_3 {
 		int num= scan.nextInt();
 		calculator.setNum(num);
 		System.out.println(calculator.sum_of_digits());
-
+        scan.close();
 	}
 }
