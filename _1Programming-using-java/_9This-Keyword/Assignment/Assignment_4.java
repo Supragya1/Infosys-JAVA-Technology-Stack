@@ -42,6 +42,7 @@ class Assignment_4 {
         rectangle.setValues(length,width);
 		System.out.println("Area of the rectangle is "+rectangle.calculateArea());
 		System.out.println("Perimeter of the rectangle is "+rectangle.calculatePerimeter());
+        scan.close();
 	}
 
 }
