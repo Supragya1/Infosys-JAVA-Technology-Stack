@@ -27,5 +27,6 @@ public class Assignment_4 {
         } else {
             System.out.println(seed + " is not a seed of " + num);
         }
+        scan.close();
     }
 }

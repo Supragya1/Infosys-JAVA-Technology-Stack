@@ -27,5 +27,6 @@ public class Assignment_6 {
         } else {
             System.out.println(num + " is not a lucky number");
         }   
+        scan.close();
     }
 }

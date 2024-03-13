@@ -26,5 +26,6 @@ public class Assignment_2 {
                 System.out.println("Chickens=" + chickens + ", Rabbits=" + rabbits);
             }
         }
+        scan.close();
     }
 }

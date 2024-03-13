@@ -25,5 +25,6 @@ public class Assignment_5 {
         } else {
             System.out.println(num + " is not an Armstrong number");
         }
+        scan.close();
     }
 }

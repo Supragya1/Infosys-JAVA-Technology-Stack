@@ -23,5 +23,6 @@ public class Assignment_7 {
             lcm++;
         }
         System.out.println("LCM of " + num1 + " and " + num2 + " is " + lcm);
+        scan.close();
     }
 }

@@ -26,6 +26,7 @@ class Assignment_1 {
 		else{
 		System.out.printf("%d is not a palindrome",num);
 		}
+		scan.close();
 	}
 }
 

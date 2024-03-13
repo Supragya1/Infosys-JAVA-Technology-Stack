@@ -23,5 +23,6 @@ public class Assignment_3 {
         } else {
             System.out.println(num + " is not divisible by sum of its digits");
         }
+        scan.close();
     }
 }
