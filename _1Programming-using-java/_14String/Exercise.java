@@ -18,7 +18,6 @@ public class Exercise{
         }
         return str;
 	}
-	
 	public static void main(String args[]){
 		String str = "Hello   How are you   ";
 		str = removeWhiteSpaces(str);
