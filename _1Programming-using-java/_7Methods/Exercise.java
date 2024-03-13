@@ -28,5 +28,6 @@ public class Exercise {
         System.out.println("Enter the third number: ");
         int num3 = scan.nextInt();
         System.out.println("The average of the three numbers is: " + c.findAverage(num1, num2, num3));
+        scan.close();
     }
 }
