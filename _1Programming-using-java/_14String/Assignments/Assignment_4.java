@@ -8,7 +8,7 @@
  * success            3 
  * associated         2
  */
-class Tester {
+public class Assignment_4{
 
 	public static int findHighestOccurrence(String str){
         int count =0;
