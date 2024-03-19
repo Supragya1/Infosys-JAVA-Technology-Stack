@@ -10,24 +10,22 @@
  */
 public class Assignment_2{
     public static double[] findDetails(double[] salary) {
-        double[] details = new double[3];
-        double sum = 0;
-        for (double sal : salary) {
-            sum += sal;
+        int sum=0;
+        int len=salary.length;
+        for(int i=0;i<len;i++){
+            sum+=salary[i];
         }
-        details[0] = sum / salary.length;
-        int greater = 0;
-        int lesser = 0;
-        for (double sal : salary) {
-            if (sal > details[0]) {
-                greater++;
-            } else if (sal < details[0]) {
-                lesser++;
+        double avg=sum/len;
+        double less=0,more=0;
+        for(int i=0;i<len;i++){
+            if(salary[i]>avg){
+                more++;
+            }
+            else{
+                less++;
             }
         }
-        details[1] = greater;
-        details[2] = lesser;
-        return details;   
+        return new double[]{avg,more,less};   
     }
     public static void main(String[] args) {
         double[] salary = { 23500.0, 25080.0, 28760.0, 22340.0, 19890.0 };
