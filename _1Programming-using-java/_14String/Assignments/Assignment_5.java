@@ -21,9 +21,26 @@ public class Assignment_5{
         }
         return result.toString();
 	}
-	
+    public static String removeDuplicatesandSpaces2(String str){
+        char arr[] = str.toCharArray();
+        int len = arr.length;
+        for(int i=0;i<len;i++){
+            for(int j=i+1;j<len;j++){
+            if(arr[i]==arr[j]||arr[j]==' '){
+                for(int k=j;k<len-1;k++){
+                    arr[k]=arr[k+1];
+                }
+                len--;
+                j--;
+            }
+            }
+        }
+        String str1 = new String(arr,0,len);
+        return str1;
+	}
         public static void main(String args[]){
                 String str = "object oriented programming";
                 System.out.println(removeDuplicatesandSpaces(str));
+                System.out.println(removeDuplicatesandSpaces2(str));
     }
 }
