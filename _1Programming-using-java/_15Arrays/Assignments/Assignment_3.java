@@ -9,7 +9,7 @@
  * 2000                     2000, 2004, 2008, 2012, 2016, 2020, 2024, 2028, 2032, 2036, 2040, 2044, 2048, 2052, 2056
  * 1900                     1904, 1908, 1912, 1916, 1920, 1924, 1928, 1932, 1936, 1940, 1944, 1948, 1952, 1956, 1960
  */
-public class Assignments_3{
+public class Assignment_3{
     
     public static int[] findLeapYears(int year){
         int start=year;
