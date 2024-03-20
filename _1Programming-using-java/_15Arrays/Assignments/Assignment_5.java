@@ -12,7 +12,7 @@
  * num1 = 1, num2 = 9            {0,0,0,0,0,0}
  * num1 = -20, num2 = -4         {0,0,0,0,0,0}
  */
-class Tester {
+public class Assignment_5{
 
 	public static int[] findNumbers(int num1, int num2) {
 		int[] numbers = new int[6];
