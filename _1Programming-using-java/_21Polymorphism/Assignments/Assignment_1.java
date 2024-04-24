@@ -70,7 +70,63 @@ class Employee {
         this.employeeName = employeeName;
     }
 }
+class PermanentEmployee extends Employee {
+    private double basicPay;
+    private double hra;
+    private float experience;
+    private double salary;
 
+    public PermanentEmployee(int empId, String name, double basicPay, double hra, float experience) {
+        super(empId, name);
+        this.basicPay = basicPay;
+        this.hra = hra;
+        this.experience = experience;
+    }
+
+    public void calculateMonthlySalary() {
+        if (experience < 3) {
+            salary = basicPay + hra;
+        } else if (experience >= 3 && experience < 5) {
+            salary = basicPay + hra + (basicPay * 5 / 100);
+        } else if (experience >= 5 && experience < 10) {
+            salary = basicPay + hra + (basicPay * 7 / 100);
+        } else {
+            salary = basicPay + hra + (basicPay * 12 / 100);
+        }
+        salary = Math.round(salary);
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
+class ContractEmployee extends Employee {
+    private double wage;
+    private float hoursWorked;
+    private double salary;
+
+    public ContractEmployee(int empId, String name, double wage, float hoursWorked) {
+        super(empId, name);
+        this.wage = wage;
+        this.hoursWorked = hoursWorked;
+    }
+
+    public void calculateSalary() {
+        salary = hoursWorked * wage;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
 public class Assignment_1 {
     public static void main(String[] args) {
         PermanentEmployee permanentEmployee = new PermanentEmployee(711211, "Rafael", 1855, 115, 3.5f);
